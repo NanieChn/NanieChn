@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NanieChn</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/bootstrap.min.js" defer></script>
 </head>
 <body>
     <header>
@@ -15,27 +17,76 @@
                 <li><a href="">Achievments</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
-            <button class="btn-cv btn-cv-nav">Download CV</button>
-        </nav>
-        <div class="home">
-            <div class="home-x">
-                <h1>Nirina Stéphanie</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ipsam sunt repellat error fugiat? Pariatur unde dolor in voluptates quos libero repellat aut tenetur. Fugit impedit cupiditate animi ratione culpa.</p>
-                <button class="btn-cv btn-cv-home">Start consulting</button>
-            </div>
-            <div class="homex">
-                <img src="" alt="">
-            </div>
-        </div>
+        </nav> 
+        <h1>Hi there, My name is Stephanie and I'm a </h1>
+        <a class="btn-cv">Download the CV</a>
     </header>
     <main>
-        <section>
-
+        <section class="about">
+            <h2>About me</h2>
+            <p>Passionate about innovation, I am constantly seeking progress in all domains that ensure the achievments of my projects. The designer and creation of artworks are some of my hobbies.</p>
         </section>
-        <section>
-
+        <section class="skills">
+          <h2>My skills</h2>
+          <div>
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>JS</div>
+            <div>REACT</div>
+            <div>PHP</div>
+            <div>QUERY</div>
+            <div>JAVA</div>
+          </div>
+        </section>
+        <section class="achievments">
+            <h2>Achievments</h2>
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="card" style="width: 18rem;">
+                      <img class="card-img-top" src="assets/img/portfolio.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <p class="card-text">My portfolio</p>
+                      </div>
+                    </div>
+                  <div class="carousel-item">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+      <h2>Contacts</h2>
+      <div class="container">
+        <div>
+          <img src="assets/icon/icons8-nouveau-message-26.png" class="mail" alt="email">
+          <a>nirinastephanie.chanpongmye@gmail.com</a>
+        </div>
+        <div>
+          <img src="assets/icon/icons8-téléphone-débranché-50.png" class="tel" alt="telephone">
+          <p>+ 261 38 68 853 22</p>
+        </div>
+        <div>
+          <img src="assets/icon/icons8-partage-30.png" class="social" alt="social media">
+          <div>
+            <a href="#"><img src="assets/icon/facebook.png" alt=""></a>
+            <a href="#"><img src="assets/icon/instagram (1).png" alt=""></a>
+            <a href="#"><img src="assets/icon/linkedin.png" alt=""></a>            
+          </div>
+        </div>
+      </div>
+        <div class="author">
+          <p>© 2024 developed by Nirina Stéphanie CHAN PONG MYE</p>
+          <p class="back">BACK TO TOP</p>
+        </div>
+    </footer>
 </body>
 </html>

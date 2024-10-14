@@ -5,21 +5,26 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 :root{
-    --grey: grey;
+    --marron: #e65c00;
+    --lightMarron: #C2B280;
 }
 header{
-    background-color: var(--grey);
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/img/hero-img.jpg);
+    background-size: cover;
+    color: white;
 }
 nav{
     width: 100vw;
-    border: 1px solid red;
-    background-color: transparent;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
-    position: sticky;
+    position: fixed;
     top: 10vh;
     z-index: 2;
 }
@@ -37,35 +42,103 @@ a{
     color: white;
     text-decoration: none;
 }
-.home{
-    margin: 10%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.home-x{
-    width: 40vw;
-    flex-direction: column;
-    display: flex;
-    justify-content: space-evenly;
-}
-.homex{
-    width: 40vw;
-    height: 40vh;
-    border: 1px solid red;
+h1::after{
+    display: inline;
+    content: "web developer";
+    color: #C2B280;
 }
 .btn-cv{
-    width: 10vw;
+    text-align: center;
+    width: 12vw;
     height: 5vh;
     color: white;
     font-weight: bold;
     border-radius: 20px;
+    background: var(--lightMarron);
 }
-.btn-cv-nav{
-    background-color: transparent;
-    border: 1px solid white;
+.btn-cv:hover{
+    color: #C2B280;
+    background-color: white;
+    cursor: pointer;
 }
-.btn-cv-home{
-    border: none;
-    background: brown;
+.about, .skills, .achievments, footer{
+    margin: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skills div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.skills div div{
+    background-color: #C2B280;
+    color: white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    text-align: center;
+}
+footer{
+    height: 30vh;;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container div{
+    width: 30vw;
+}
+.mail::after{
+    display: inline;
+    content: "Email";
+}
+.tel{
+    scale: 0.5;
+}
+.tel::after{
+    display: inline;
+    content: "Telephone";
+}
+footer div a img{
+    scale: 0.5;
+}
+footer div a img:hover{
+    scale: 0.8;
+    transition: 0.2s ease;
+}
+.author{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+.back::after{
+    display: inline;
+    content: " ^";
+    color: #C2B280;
+}
+@media screen and (width< 500px) {
+    .btn-cv{
+        display: none;
+    }
+    .home{
+        flex-direction: column;
+    }
+    header{
+        height: 100vh;
+    }
+}
+@media screen and (500px <width< 700px) {
+    ul{
+        width: 50%;
+    }
+   
 }
